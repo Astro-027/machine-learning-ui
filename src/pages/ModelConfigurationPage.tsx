@@ -10,6 +10,7 @@ const ModelConfigurationPage: React.FC = () => {
             <ModelSelection />
             <ParameterSettings />
             <AdversarialExampleSettings />
+            {/* Option to add entire models */}
             <button>Save Configuration</button>
         </div>
     );

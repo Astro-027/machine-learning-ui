@@ -1,46 +1,74 @@
-# Getting Started with Create React App
+# Machine Learning UI Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web-based application designed to interface with various machine learning models for creating adversarial examples, enhancing models with deep Bayesian techniques, and visualizing results. It aims to provide an intuitive and interactive experience for users, particularly focusing on educational purposes and research at Benedict College.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+### Prerequisites
 
-### `npm start`
+Before you begin, ensure you have the following installed:
+- Node.js (v12.x or later)
+- npm (v6.x or later)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+You can check your current versions with:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+`node -v`
 
-### `npm test`
+`npm -v`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get the application running on your local machine, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the Repository**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+First, clone the project repository to your local machine using Git:
 
-### `npm run eject`
+https://github.com/Astro-027/machine-learning-ui.git
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+cd machine-learning-ui
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. **Install Dependencies**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Inside the project directory, install the necessary dependencies by running:
 
-## Learn More
+`npm install`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This command will install all the dependencies listed in the `package.json` file.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Start the Application**
+
+Once the installation is complete, you can start the application in development mode with:
+
+`npm start`
+
+This will run the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser. The page will automatically reload if you make edits.
+
+4. **Build the Application**
+
+For production deployment, you can build the app with:
+
+`npm run build`
+
+
+This command builds the app for production to the `build` folder. It bundles React in production mode and optimizes the build for the best performance.
+
+### Stopping the Application
+
+To stop the application, use the `Ctrl + C` command in your terminal.
+
+## Further Help
+
+For more detailed information on React and Create React App, you can visit the following resources:
+- [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started)
+- [React documentation](https://reactjs.org/)
+
+<!-- ## Contributing
+
+We welcome contributions from the community. Please read our contributing guidelines before making a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details. -->
