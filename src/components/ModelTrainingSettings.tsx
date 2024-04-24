@@ -1,9 +1,9 @@
 import React from 'react';
 
-const AdversarialExampleSettings: React.FC = () => {
+const ModelTrainingSettings: React.FC = () => {
     return (
-        <div className="adversarial-example-settings">
-            <h2>Adversarial Example Settings</h2>
+        <div className="model-training-settings">
+            <h2>Model Training Settings</h2>
             {/* Placeholder for adversarial example settings */}
             <label>
                 Example Setting 1:
@@ -14,4 +14,4 @@ const AdversarialExampleSettings: React.FC = () => {
     );
 };
 
-export default AdversarialExampleSettings;
+export default ModelTrainingSettings;

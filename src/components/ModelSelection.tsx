@@ -6,8 +6,8 @@ const ModelSelection: React.FC = () => {
             <h2>Model Selection</h2>
             {/* Placeholder for model selection dropdown */}
             <select>
-                <option value="model1">Model 1</option>
-                <option value="model2">Model 2</option>
+                <option value="model1">vgg16</option>
+                <option value="model2">vgg19</option>
                 {/* // Add more models as options here */}
             </select>
         </div>

@@ -7,11 +7,12 @@ import DataFilters from '../components/DataFilters';
 const DataSelectionPage: React.FC = () => {
     return (
         <div className="data-selection-page">
+            {/* Have option to slect data sets from local files */}
             <h1>Data Selection</h1>
             <DataSetLibrary />
             <DataUpload />
             <DataPreview />
-            <DataFilters />
+            {/* <DataFilters /> */}
         </div>
     );
 };

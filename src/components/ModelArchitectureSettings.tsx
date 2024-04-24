@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ParameterSettings: React.FC = () => {
+const ModelArchitectureSettings: React.FC = () => {
     return (
-        <div className="parameter-settings">
-            <h2>Parameter Settings</h2>
+        <div className="model-architecture-settings">
+            <h2>Model Architecture Settings</h2>
             {/* Placeholder for parameter settings */}
             <label>
                 Parameter 1:
@@ -14,4 +14,4 @@ const ParameterSettings: React.FC = () => {
     );
 };
 
-export default ParameterSettings;
+export default ModelArchitectureSettings;

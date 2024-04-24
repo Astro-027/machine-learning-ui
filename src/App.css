@@ -129,8 +129,8 @@ button:hover {
 }
 
 .model-selection,
-.parameter-settings,
-.adversarial-example-settings {
+.model-training-settings,
+.model-architecture-settings {
   margin: 20px 0;
   padding: 20px;
   border: 1px solid #CED4DA;
