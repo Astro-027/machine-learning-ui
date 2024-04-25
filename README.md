@@ -19,7 +19,7 @@ You can check your current versions with:
 
 `conda -V`
 
-If you do not have Anaconda installed, follow https://docs.anaconda.com/free/anaconda/install/index.html to get started.
+If you do not have Anaconda installed, follow https://docs.anaconda.com/free/anaconda/install/index.html to install it.
 If you do not have Node.js or npm installed follow these steps to get strted:
 
 ### Installing Node.js and npm
@@ -82,11 +82,11 @@ pip install -U flask-cors
 
 3. **Start Backend Server**
 
-Navigate to the backend folder by:
+Navigate to the backend folder:
 
 `cd backend`
 
-Run the Flask server by:
+Run the Flask server with:
 
 `flask run`
 
