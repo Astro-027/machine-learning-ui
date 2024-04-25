@@ -16,6 +16,7 @@ import HelpPage from './pages/HelpPage';
 
 
 function App() {
+  
   return (
     <Router>
       <div className="App">

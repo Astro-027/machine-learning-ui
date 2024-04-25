@@ -9,6 +9,7 @@ This project is a web-based application designed to interface with various machi
 Before you begin, ensure you have the following installed:
 - Node.js (v12.x or later)
 - npm (v6.x or later)
+- Anaconda
 
 You can check your current versions with:
 
@@ -16,6 +17,9 @@ You can check your current versions with:
 
 `npm -v`
 
+`conda -V`
+
+If you do not have Anaconda installed, follow https://docs.anaconda.com/free/anaconda/install/index.html to get started.
 If you do not have Node.js or npm installed follow these steps to get strted:
 
 ### Installing Node.js and npm
@@ -47,7 +51,6 @@ If you do not have Node.js and npm installed, follow these steps:
      npm -v
      ```
 
-
 ### Installation
 
 To get the application running on your local machine, follow these steps:
@@ -60,8 +63,34 @@ https://github.com/Astro-027/machine-learning-ui.git
 
 cd machine-learning-ui
 
+2. **Install Backend Dependencies**
 
-2. **Install Dependencies**
+Create a virtual environment and activate it.
+
+`conda create --name <my-env>`
+
+`conda activate <my-env>`
+
+You can also use `source activate` instead.
+
+Install flask, flask-cors, and python's dotenv package. Inside your environment, run: 
+
+```
+pip install flask python-dotenv
+pip install -U flask-cors
+```
+
+3. **Start Backend Server**
+
+Navigate to the backend folder by:
+
+`cd backend`
+
+Run the Flask server by:
+
+`flask run`
+
+3. **Install Frontend Dependencies**
 
 Inside the project directory, install the necessary dependencies by running:
 
@@ -69,7 +98,7 @@ Inside the project directory, install the necessary dependencies by running:
 
 This command will install all the dependencies listed in the `package.json` file.
 
-3. **Start the Application**
+4. **Start the Application**
 
 Once the installation is complete, you can start the application in development mode with:
 
