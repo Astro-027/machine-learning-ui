@@ -4,13 +4,29 @@ import ResultsDisplay from '../components/ResultsDisplay';
 import ModelComparison from '../components/ModelComparison';
 import StatisticsMetrics from '../components/StatisticsMetrics';
 
-const ResultsVisualizationPage: React.FC = () => {
-    const [placeholder, setPlaceholder] = useState('Nothing');
+function ResultsVisualizationPage() {
+    const [data, setdata] = useState('Training...');
 
+    
     useEffect(() => {
-    	fetch('http://localhost:5000/hello').then(res => res.json()).then(data => {
-      		setPlaceholder(data.result);
-    	});
+	    const sse = new EventSource('http://localhost:5000/stream');
+
+	    function handleStream(e:any){
+	      console.log(e)
+	      setdata(e.data)
+	    };
+
+	    sse.onmessage = e =>{handleStream(e)};
+
+	    sse.onerror = e => {
+	      //GOTCHA - can close stream and 'stall'
+	      sse.close()
+	    };
+
+	    return () => {
+	      sse.close();
+	      
+	    };
     }, []);
     
     
@@ -21,7 +37,7 @@ const ResultsVisualizationPage: React.FC = () => {
             <ModelComparison />
             <StatisticsMetrics />
             <button className="export-btn">Export Results</button>
-            <p>Backend says {placeholder}</p>
+            <p>Status: {data}</p>
         </div>
     );
 };

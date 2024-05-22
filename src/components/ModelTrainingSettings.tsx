@@ -1,8 +1,16 @@
 import React from 'react';
+import { useState } from "react"
 
 const ModelTrainingSettings: React.FC = () => {
+    const [lr, setlr] = useState(0.00005);
+    
+    
+    const onChange = (e:any) => {
+    	setlr(e.target.value)
+  	}
     return (
         <div className="model-training-settings">
+            <form method="post" action='http://localhost:5000/get_data'>
             <h2>Model Training Settings</h2>
             <div>
                 <label>
@@ -28,9 +36,11 @@ const ModelTrainingSettings: React.FC = () => {
             <div>
                 <label>
                     Learning Rate:
-                    <input type="number" defaultValue={0.00005} step="0.00001" min="0.00001" max="0.001" />
+                    <input name="lr" type="number" defaultValue={lr} step="0.00001" min="0.00001" max="0.001" onChange={onChange} />
                 </label>
             </div>
+            <input type='submit' />
+            </form>
         </div>
     );
 };
