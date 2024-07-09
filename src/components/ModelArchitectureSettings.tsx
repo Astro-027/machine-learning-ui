@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/ModelArchitectureSettings.css';
 
 const ModelArchitectureSettings: React.FC = () => {
     return (

@@ -1,0 +1,18 @@
+.model-selection-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+  }
+  .model-selection {
+    text-align: center;
+  }
+  .model-selection select {
+    font-size: 1.2em;
+    padding: 1px;
+  }
+  .model-selection img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 1px;
+  }

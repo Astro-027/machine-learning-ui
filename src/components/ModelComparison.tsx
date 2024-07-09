@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/ModelComparision.css';
 
 const ModelComparison: React.FC = () => {
     return (
