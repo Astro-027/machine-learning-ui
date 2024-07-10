@@ -17,31 +17,55 @@ import ContactSupport from '../components/ContactSupport';
 import FeedbackForm from '../components/FeedbackForm';
 
 
+
+
 const HomePage: React.FC = () => {
     return (
         <div className="home-page">
-            <WelcomeSection />
-            <QuickStartGuide />
-            <LoginRegistration />
-            <h1>Data Selection</h1>
-            <DataSetLibrary />
-            <DataUpload />
-            <DataPreview />
-            <h1>Model Configuration</h1>
-            <ModelSelection />
-            <ModelArchitectureSettings />
-            <ModelTrainingSettings />
-            <h1>Results Visualization</h1>
-            <ResultsDisplay />
-            <ModelComparison />
-            <StatisticsMetrics />
-            <h1>Help & FAQ</h1>
-            <FAQSection />
-            <TutorialSection />
-            <ContactSupport />
-            <FeedbackForm />
+            <div className="grid-container">
+                <div className="grid-item">
+                    <WelcomeSection />
+                    <QuickStartGuide />
+                </div>
+                <div className="grid-item">
+                    <LoginRegistration />
+                    <h2>Data Selection</h2>
+                    <DataSetLibrary />
+                </div>
+                <div className="grid-item">
+                    <DataUpload />
+                    <DataPreview />
+                </div>
+                <div className="grid-item">
+                    <h2>Model Configuration</h2>
+                    <ModelSelection />
+                    <ModelArchitectureSettings />
+                </div>
+                <div className="grid-item">
+                    <ModelTrainingSettings />
+                    <h2>Results Visualization</h2>
+                    <ResultsDisplay />
+                </div>
+                <div className="grid-item">
+                    <ModelComparison />
+                    <StatisticsMetrics />
+                </div>
+                <div className="grid-item">
+                    <h2>Help & FAQ</h2>
+                    <FAQSection />
+                </div>
+                <div className="grid-item">
+                    <TutorialSection />
+                </div>
+                <div className="grid-item">
+                    <ContactSupport />
+                    <FeedbackForm />
+                </div>
+            </div>
         </div>
     );
 };
+
+
 
 export default HomePage;

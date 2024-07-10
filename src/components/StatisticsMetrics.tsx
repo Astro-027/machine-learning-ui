@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/StatisticsMetrics.css';
 
 const StatisticsMetrics: React.FC = () => {
     return (
