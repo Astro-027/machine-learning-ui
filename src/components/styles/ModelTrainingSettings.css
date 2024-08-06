@@ -1,9 +1,38 @@
-.model-training-settings{
-  margin: 20px 0;
-  padding: 20px;
-  border: 1px solid #CED4DA;
+/* ModelTrainingSettings.css */
+.model-training-settings {
+  background-color: #ffffff;
+  padding: 2px;
+  max-width: 900px; /* Match the max-width of the parent container */
+  margin: 20px auto;
+}
+
+.model-training-settings h2 {
+  color: #333;
+  font-size: 28px; /* Consistent heading size with other components */
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0; /* Consistent border color */
+  padding-bottom: 10px;
+}
+
+.setting-item input,
+.setting-item select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  width: 90%;
-  max-width: 600px;
-  
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+  width: 100%; /* Ensure inputs/selects fill the width of their container */
+}
+
+.apply-settings {
+  background-color: #007bff; /* Use the primary color for the button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  width: fit-content; /* Make the button width fit its content */
 }

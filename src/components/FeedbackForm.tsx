@@ -3,7 +3,7 @@ import React from 'react';
 const FeedbackForm: React.FC = () => {
     return (
         <div className="feedback-form">
-            <h2>Feedback</h2>
+            <h3>Feedback</h3>
             {/* Placeholder for feedback form */}
             <form>
                 <label>

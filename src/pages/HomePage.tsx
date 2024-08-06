@@ -1,71 +1,64 @@
+// HomePage.tsx
 import React from 'react';
 import WelcomeSection from '../components/WelcomeSection';
-import QuickStartGuide from '../components/QuickStartGuide';
 import LoginRegistration from '../components/LoginRegistration';
 import DataSetLibrary from '../components/DataSetLibrary';
 import DataUpload from '../components/DataUpload';
 import DataPreview from '../components/DataPreview';
-import ModelSelection from '../components/ModelSelection';
-import ModelArchitectureSettings from '../components/ModelArchitectureSettings';
-import ModelTrainingSettings from '../components/ModelTrainingSettings';
+
+import ModelConfiguration from '../components/ModelConfiguration';
+
 import ResultsDisplay from '../components/ResultsDisplay';
 import ModelComparison from '../components/ModelComparison';
 import StatisticsMetrics from '../components/StatisticsMetrics';
+
+
 import FAQSection from '../components/FAQSection';
 import TutorialSection from '../components/TutorialSection';
 import ContactSupport from '../components/ContactSupport';
 import FeedbackForm from '../components/FeedbackForm';
-
-
-
+import './styles/HomePage.css';
 
 const HomePage: React.FC = () => {
     return (
-        <div className="home-page">
-            <div className="grid-container">
-                <div className="grid-item">
-                    <WelcomeSection />
-                    <QuickStartGuide />
-                </div>
-                <div className="grid-item">
-                    <LoginRegistration />
-                    <h2>Data Selection</h2>
+      <div className="home-page">
+        <header className="header">
+          <WelcomeSection />
+          <LoginRegistration />
+        </header>
+  
+            <div className="content-grid">
+                <div className="grid-item data-management">
+                    <h2>Data Management</h2>
                     <DataSetLibrary />
-                </div>
-                <div className="grid-item">
                     <DataUpload />
                     <DataPreview />
                 </div>
-                <div className="grid-item">
-                    <h2>Model Configuration</h2>
-                    <ModelSelection />
-                    <ModelArchitectureSettings />
+
+                <div className="grid-item model-config">
+                    <ModelConfiguration /> 
                 </div>
-                <div className="grid-item">
-                    <ModelTrainingSettings />
-                    <h2>Results Visualization</h2>
+
+                <div className="grid-item results-analysis">
+                    <h2>Results and Analysis</h2>
                     <ResultsDisplay />
-                </div>
-                <div className="grid-item">
                     <ModelComparison />
                     <StatisticsMetrics />
                 </div>
-                <div className="grid-item">
-                    <h2>Help & FAQ</h2>
-                    <FAQSection />
-                </div>
-                <div className="grid-item">
-                    <TutorialSection />
-                </div>
-                <div className="grid-item">
-                    <ContactSupport />
-                    <FeedbackForm />
+
+                <div className="grid-item help-support" style={{ gridColumn: 'span 3' }}>
+                    <h3>Help and Support</h3>
+                    <div className="help-support-grid">
+                        <FAQSection />
+                        <TutorialSection />
+                        <ContactSupport />
+                        <FeedbackForm />
+                    </div>
                 </div>
             </div>
         </div>
-    );
+    )
 };
-
-
-
-export default HomePage;
+    
+  
+  export default HomePage;

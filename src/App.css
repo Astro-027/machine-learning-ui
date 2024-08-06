@@ -8,23 +8,7 @@ body {
   box-sizing: border-box;
 }
 
-
-/* Homepage styles */
-.home-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-}
-
-/* Update these selectors to target specific elements in your components */
-.component h1,
-.component h2,
-.component p {
-  margin: 10px 0;
-}
-
-/* Component specific styles */
+/* Global component styles */
 .component {
   background-color: #FFFFFF;
   margin: 10px 0;
@@ -33,10 +17,9 @@ body {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   width: 90%;
   max-width: 800px;
-  /* Adjust based on your design preference */
 }
 
-/* Retained your original styles for button, input, and card components */
+/* Global button styles */
 button {
   background-color: #6C757D;
   color: white;
@@ -51,6 +34,7 @@ button:hover {
   background-color: #5A6268;
 }
 
+/* Global input styles */
 .input {
   padding: 0.5rem;
   border: 1px solid #CED4DA;
@@ -59,6 +43,7 @@ button:hover {
   width: 100%;
 }
 
+/* Global card styles */
 .card {
   background-color: #FFFFFF;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -66,74 +51,3 @@ button:hover {
   padding: 1rem;
   margin-bottom: 1rem;
 }
-
-/* CSS styles for DataSelectionPage */
-.data-selection-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-.dataset-library,
-.data-upload,
-.data-preview,
-.data-filters {
-  margin: 20px 0;
-  padding: 20px;
-  border: 1px solid #CED4DA;
-  border-radius: 4px;
-}
-
-/* CSS styles for ModelConfigurationPage */
-.model-configuration-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2px;
-}
-
-/* CSS styles for ResultsVisualizationPage */
-.results-visualization-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-.export-btn {
-  /* Style your export button */
-  background-color: #4CAF50;
-  /* Example */
-  color: white;
-}
-
-/* CSS styles for HelpPage */
-.help-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-.faq-section, .tutorial-section, .contact-support, .feedback-form {
-  margin: 20px 0;
-  padding: 20px;
-  border: 1px solid #CED4DA;
-  border-radius: 4px;
-  width: 90%;
-  max-width: 600px;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-}
-

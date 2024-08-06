@@ -1,0 +1,90 @@
+/* HomePage.css */
+
+/* Base Styles */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Content Grid */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
+  grid-template-rows: auto auto 1fr;   /* Three rows (header, help-support, main content) */
+  gap: 0.5rem;
+  padding: 0.5rem;
+  overflow-y: auto;
+  height: calc(100vh - 60px); /* Adjust based on header height */
+}
+
+.grid-item {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 0.5rem;
+  overflow-y: auto;
+}
+
+/* Grid Item Placement */
+.data-management,
+.model-config,
+.results-analysis {
+  grid-column: span 1; /* Default: span 1 column */
+}
+
+/* Help & Support Section */
+.help-support {
+  grid-column: span 3; /* Default: span 3 columns */
+  max-height: 150px;   /* Limit height, add scrollbar if needed */
+  overflow-y: auto;
+}
+
+.help-support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible columns */
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+}
+
+.help-support-item {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 0.5rem;
+  overflow-y: auto;
+  }
+
+/* Typography */
+h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.25rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .content-grid { grid-template-columns: repeat(2, 1fr); } /* 2 columns at medium screens */
+  .data-management, .model-config, .results-analysis, .help-support { grid-column: span 2; }
+}
+
+@media (max-width: 768px) {
+  .content-grid { grid-template-columns: 1fr; } /* 1 column at small screens */
+  .data-management, .model-config, .results-analysis, .help-support { grid-column: span 1; }
+  .help-support-grid { grid-template-columns: 1fr; } /* 1 column for help items */
+}

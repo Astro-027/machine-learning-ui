@@ -1,8 +1,119 @@
+/* ResultsDisplay.css */
 .results-display {
-  margin: 20px 0;
-  padding: 20px;
-  border: 1px solid #CED4DA;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.results-display h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.results-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 200px;
+}
+
+.select-wrapper::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.results-display select {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ced4da;
   border-radius: 4px;
-  width: 90%;
-  max-width: 600px;
+  appearance: none;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.results-display select:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.export-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.export-btn:hover {
+  background-color: #218838;
+}
+
+.graph-container {
+  margin-bottom: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.graph-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.results-summary h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.results-summary table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.results-summary th,
+.results-summary td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.results-summary th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .results-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .select-wrapper,
+  .export-btn {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
