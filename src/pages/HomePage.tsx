@@ -2,9 +2,12 @@
 import React from 'react';
 import WelcomeSection from '../components/WelcomeSection';
 import LoginRegistration from '../components/LoginRegistration';
+
+
 import DataSetLibrary from '../components/DataSetLibrary';
 import DataUpload from '../components/DataUpload';
 import DataPreview from '../components/DataPreview';
+import '../components/styles/DataManagement.css';
 
 import ModelConfiguration from '../components/ModelConfiguration';
 
@@ -29,11 +32,11 @@ const HomePage: React.FC = () => {
   
             <div className="content-grid">
                 <div className="grid-item data-management">
-                    <h2>Data Management</h2>
-                    <DataSetLibrary />
-                    <DataUpload />
-                    <DataPreview />
-                </div>
+                    <h2 className="section-title">Data Management</h2>
+                        <DataSetLibrary />
+                        <DataUpload />
+                        <DataPreview />
+            </div>
 
                 <div className="grid-item model-config">
                     <ModelConfiguration /> 

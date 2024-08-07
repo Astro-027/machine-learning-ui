@@ -1,0 +1,23 @@
+.dataset-library ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .dataset-library li {
+    margin-bottom: 15px;
+    border-bottom: 1px dotted #ccc; /* Add a separator between datasets */
+    padding-bottom: 10px;
+  }
+
+  .dataset-library button {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dataset-library button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }

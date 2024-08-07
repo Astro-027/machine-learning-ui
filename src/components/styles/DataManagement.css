@@ -1,0 +1,96 @@
+/* DataManagement.css */
+.data-management {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .section-title {
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* DataUpload styles */
+  .data-upload {
+    margin-bottom: 30px;
+  }
+  
+  .file-input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .file-input-label {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .file-input-label:hover {
+    background-color: #0056b3;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  .file-name {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .upload-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .upload-button:hover {
+    background-color: #218838;
+  }
+  
+  .upload-status {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  /* DataPreview styles */
+  .data-preview {
+    overflow-x: auto;
+  }
+  
+  .data-preview table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .data-preview th, .data-preview td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .data-preview th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .data-preview tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+  
+  .data-preview tr:hover {
+    background-color: #e8e8e8;
+  }
