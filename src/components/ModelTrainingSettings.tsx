@@ -47,7 +47,6 @@ const ModelTrainingSettings: React.FC = () => {
           />
         </div>
       </div>
-      <button className="apply-settings">Apply Settings</button>
     </div>
   );
 };

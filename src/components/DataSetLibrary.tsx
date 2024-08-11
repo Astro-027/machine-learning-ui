@@ -21,7 +21,7 @@ const DataSetLibrary: React.FC = () => {
             <ul>
                 {sampleDatasets.map((dataset, index) => (
                     <li key={index}>
-                        <h3>{dataset.name}</h3>
+                        <h3 className="dataset-name">{dataset.name}</h3>
                         
                         <button onClick={() => handleLoadDataset(dataset.name)}>Load</button>
                     </li>

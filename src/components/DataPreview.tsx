@@ -32,7 +32,7 @@ const DataPreview: React.FC = () => {
 
   return (
     <div className="data-preview">
-      <h2>Data Preview: Adult Income Dataset</h2>
+      <h3>Data Preview: Adult Income Dataset</h3>
       <table>
         <thead>
           <tr>

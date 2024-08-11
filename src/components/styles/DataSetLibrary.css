@@ -1,23 +1,29 @@
 .dataset-library ul {
     list-style: none;
     padding: 0;
-  }
+}
   
-  .dataset-library li {
+.dataset-library li {
     margin-bottom: 15px;
     border-bottom: 1px dotted #ccc; /* Add a separator between datasets */
     padding-bottom: 10px;
-  }
+}
 
-  .dataset-library button {
+.dataset-library button {
     background-color: #007bff; /* Blue background */
     color: white;
     padding: 8px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
   
-  .dataset-library button:hover {
+.dataset-library button:hover {
     background-color: #0056b3; /* Darker blue on hover */
-  }
+}
+
+.dataset-name h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}

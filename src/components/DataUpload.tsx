@@ -14,8 +14,6 @@ const DataUpload: React.FC = () => {
   const handleUpload = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (file) {
-      // Here you would typically send the file to your server
-      // For this example, we'll just simulate a successful upload
       setUploadStatus('File uploaded successfully!');
       console.log('Uploading file:', file.name);
     } else {
@@ -25,7 +23,7 @@ const DataUpload: React.FC = () => {
 
   return (
     <div className="data-upload">
-      <h2>Upload Data</h2>
+      <h3>Upload Data</h3>
       <form onSubmit={handleUpload}>
         <div className="file-input-container">
           <input 
