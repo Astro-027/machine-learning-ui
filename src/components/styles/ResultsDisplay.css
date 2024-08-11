@@ -3,17 +3,18 @@
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
+  padding: 0.5rem 1rem 1rem; /* Reduced top padding */
   width: 100%;
   max-width: 800px;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
-.results-display h2 {
+.results-display h3 {
   color: #333;
-  font-size: 24px;
-  margin-bottom: 1.5rem;
-  text-align: center;
+  font-size: 20px; /* Slightly reduced from 24px */
+  margin-top: 10px; /* Remove top margin */
+  margin-bottom: 0.75rem; /* Reduced from 1rem */
+  text-align: left;
 }
 
 .results-controls {
@@ -25,7 +26,7 @@
 
 .select-wrapper {
   position: relative;
-  width: 200px;
+  width: 60%;
 }
 
 .select-wrapper::after {
@@ -39,8 +40,8 @@
 
 .results-display select {
   width: 100%;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
   border: 1px solid #ced4da;
   border-radius: 4px;
   appearance: none;
@@ -56,24 +57,26 @@
 }
 
 .export-btn {
-  background-color: #28a745;
-  color: white;
+  background-color: #5eff00;
+  color: #fff;
   border: none;
-  padding: 0.5rem 1rem;
   border-radius: 4px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.15s ease-in-out;
 }
 
 .export-btn:hover {
-  background-color: #218838;
+  background-color: #b36b00;
 }
 
 .graph-container {
-  margin-bottom: 2rem;
-  border: 1px solid #e0e0e0;
-  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  max-width: 100%;
   overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .graph-container img {
@@ -82,8 +85,13 @@
   display: block;
 }
 
+.results-summary {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
 .results-summary h3 {
-  color: #333;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
@@ -95,25 +103,28 @@
 
 .results-summary th,
 .results-summary td {
-  padding: 0.75rem;
+  padding: 0.5rem;
   text-align: left;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #dee2e6;
 }
 
 .results-summary th {
-  background-color: #f8f9fa;
-  font-weight: 600;
+  font-weight: bold;
+  background-color: #e9ecef;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .results-controls {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .select-wrapper,
-  .export-btn {
+  .select-wrapper {
     width: 100%;
     margin-bottom: 1rem;
+  }
+
+  .export-btn {
+    width: 100%;
   }
 }

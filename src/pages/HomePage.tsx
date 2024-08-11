@@ -2,15 +2,12 @@
 import React from 'react';
 import WelcomeSection from '../components/WelcomeSection';
 import LoginRegistration from '../components/LoginRegistration';
-import DataSetLibrary from '../components/DataSetLibrary';
-import DataUpload from '../components/DataUpload';
-import DataPreview from '../components/DataPreview';
+
+import DataManagement from '../components/DataManagement';
 
 import ModelConfiguration from '../components/ModelConfiguration';
 
-import ResultsDisplay from '../components/ResultsDisplay';
-import ModelComparison from '../components/ModelComparison';
-import StatisticsMetrics from '../components/StatisticsMetrics';
+import ResultsAndAnalysis from '../components/ResultsAndAnalysis';
 
 
 import FAQSection from '../components/FAQSection';
@@ -29,10 +26,7 @@ const HomePage: React.FC = () => {
   
             <div className="content-grid">
                 <div className="grid-item data-management">
-                    <h2>Data Management</h2>
-                    <DataSetLibrary />
-                    <DataUpload />
-                    <DataPreview />
+                    <DataManagement />
                 </div>
 
                 <div className="grid-item model-config">
@@ -40,10 +34,7 @@ const HomePage: React.FC = () => {
                 </div>
 
                 <div className="grid-item results-analysis">
-                    <h2>Results and Analysis</h2>
-                    <ResultsDisplay />
-                    <ModelComparison />
-                    <StatisticsMetrics />
+                    <ResultsAndAnalysis />
                 </div>
 
                 <div className="grid-item help-support" style={{ gridColumn: 'span 3' }}>

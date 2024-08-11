@@ -24,6 +24,7 @@ const ModelConfiguration: React.FC = () => {
       <div className="model-section">
         <ModelTrainingSettings />
       </div>
+      <button className="apply-settings">Apply Settings  and Train</button>
     </div>
   );
 };

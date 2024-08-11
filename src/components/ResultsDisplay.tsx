@@ -12,7 +12,7 @@ const ResultsDisplay: React.FC = () => {
 
   return (
     <div className="results-display">
-      <h2>Results Display</h2>
+      <h3>Results Display</h3>
       <div className="results-controls">
         <div className="select-wrapper">
           <select value={selectedMetric} onChange={handleMetricChange}>
@@ -27,7 +27,7 @@ const ResultsDisplay: React.FC = () => {
         <img src={ResultGraph} alt={`${selectedMetric} vs Epoch`} />
       </div>
       <div className="results-summary">
-        <h3>Summary Statistics</h3>
+        <h3>Statistics Summary</h3>
         <table>
           <thead>
             <tr>

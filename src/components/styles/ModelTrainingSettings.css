@@ -3,13 +3,13 @@
   background-color: #ffffff;
   padding: 2px;
   max-width: 900px; /* Match the max-width of the parent container */
-  margin: 20px auto;
+  margin: 0px auto;
 }
 
 .model-training-settings h2 {
   color: #333;
   font-size: 28px; /* Consistent heading size with other components */
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   border-bottom: 2px solid #e0e0e0; /* Consistent border color */
   padding-bottom: 10px;
 }
@@ -33,6 +33,7 @@
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 20px;
+  margin-top: 10px;
   width: fit-content; /* Make the button width fit its content */
 }
+

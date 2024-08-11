@@ -47,7 +47,6 @@ const ModelArchitectureSettings: React.FC = () => {
           />
         </div>
       </div>
-      <button className="apply-settings">Apply Architecture</button>
     </div>
   );
 };
