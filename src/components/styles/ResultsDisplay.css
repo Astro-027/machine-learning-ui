@@ -1,12 +1,11 @@
 /* ResultsDisplay.css */
 .results-display {
   background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 0.5rem 1rem 1rem; /* Reduced top padding */
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 0rem; /* Reduced top padding */
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
 }
 
 .results-display h3 {
@@ -22,6 +21,8 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
+  padding: 0rem;
+  background-color: #f8f9fa;
 }
 
 .select-wrapper {
@@ -72,11 +73,11 @@
 }
 
 .graph-container {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0rem;
   max-width: 100%;
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  box-shadow: none;
 }
 
 .graph-container img {

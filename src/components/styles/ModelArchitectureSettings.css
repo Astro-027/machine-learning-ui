@@ -9,6 +9,7 @@
 .setting-item {
   display: flex;
   flex-direction: column;
+  width: 90%;
 }
 
 .setting-item label {
