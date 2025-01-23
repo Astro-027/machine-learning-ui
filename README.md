@@ -96,6 +96,23 @@ For more detailed information on React and Create React App, you can visit the f
 - [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started)
 - [React documentation](https://reactjs.org/)
 
+<h2>Contributors &amp; Funding</h2>
+
+<p><strong>Project Name:</strong><br>
+A Software Tool for Securing Deep Learning against Adversarial Attacks for CAVs</p>
+
+<p><strong>Funding:</strong><br>
+This project is supported by the Center for Connected Multimodal Mobility (C<sup>2</sup>M<sup>2</sup>), a Tier 1 University Transportation Center headquartered at Clemson University, Clemson, South Carolina, USA, funded through the U.S. Department of Transportation’s University Transportation Centers Program.</p>
+
+<p><strong>Contributors and Affiliations:</strong></p>
+<ul>
+  <li>Pierluigi Pisu, Ph.D., Clemson University</li>
+  <li>Gurcan Comert, Ph.D., Benedict College</li>
+  <li>Negash Begashaw, Ph.D., Benedict College</li>
+  <li>Chunheng Zhao, Ph.D. Candidate, Clemson University</li>
+  <li>Kalpit Vadnerkar, Ph.D. Candidate, Clemson University</li>
+</ul>
+
 <!-- ## Contributing
 
 We welcome contributions from the community. Please read our contributing guidelines before making a pull request.
